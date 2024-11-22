@@ -1,0 +1,212 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Make the image a circle */
+#bio img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 24px 24px 0;
+}
+
+#bio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bio-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#bio img {
+    margin-right: 20px;
+}
+
+h2 {
+    margin: 24px 24px 0;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.header .logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.header .search-bar input {
+    padding: 8px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+}
+
+.header .user a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Video grid container */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual video container */
+.video {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video title and channel info */
+.video-info {
+    padding: 10px;
+}
+
+.video-info h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.video-info p {
+    font-size: 14px;
+    color: gray;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 992px) {
+    #bio, #more {
+        flex: 1 1 48%;
+    }
+
+    .video {
+        flex: 1 1 calc(33% - 20px);
+    }
+}
+
+img {
+    height: 200px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.films-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.film-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.poster {
+    margin: 20px;
+}
+
+.details {
+    max-width: 600px;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.synopsis {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.poster-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px; 
+} 
+
+th, td { 
+    padding: 10px; 
+    text-align: left; 
+    vertical-align: top; 
+    border: none;
+} 
+
+.film-container { 
+    display: flex; 
+    align-items: flex-start; 
+} 
+
+img { 
+    width: 150px; 
+    height: auto; margin-right: 20px;  
+} 
+
+.icons { 
+    display: flex; 
+    gap: 10px; 
+    margin-top: 10px; 
+    justify-content: center;
+} 
+
+.icons a { 
+    display: inline-block; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    text-align: center; 
+    transition: background-color 0.3s; 
+} 
+
+.icons a:hover { 
+    background-color: #555; 
+} 
+
+.icons img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+} 
+
+.letterboxd-icon a { 
+    background-color: transparent; 
+} 
